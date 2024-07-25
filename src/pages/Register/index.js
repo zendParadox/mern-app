@@ -18,11 +18,29 @@ const Register = () => {
 
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <form action="#" method="POST" className="">
-            <Input label="Full name" placeholder="Your Full Name" />
+            <Input
+              label="Full name"
+              placeholder="Your Full Name"
+              name="text"
+              type="text"
+              autoComplete="text"
+            />
             <Gap height="5" />
-            <Input label="Email" placeholder="Your Email" />
+            <Input
+              label="Email"
+              placeholder="Your Email"
+              name="email"
+              type="email"
+              autoComplete="email"
+            />
             <Gap height="5" />
-            <Input label="Password" placeholder="Your Password" />
+            <Input
+              label="Password"
+              placeholder="Your Password"
+              name="password"
+              type="password"
+              autoComplete="password"
+            />
             <Gap height="10" />
             <Button title="Register" />
             <Gap height="10" />
