@@ -44,7 +44,11 @@ const Register = () => {
             <Gap height="10" />
             <Button title="Register" />
             <Gap height="10" />
-            <Link situation={"Already Have Account?"} title={"Login Here!"} />
+            <Link
+              situation={"Already Have Account?"}
+              title={"Login Here!"}
+              onClick={"/login"}
+            />
           </form>
         </div>
       </div>

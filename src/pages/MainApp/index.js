@@ -1,20 +1,22 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home, CreateBlog, DetailBlog } from "../../pages";
+import { Header, Footer } from "../../components/molecules";
 
 const MainApp = () => {
   return (
-    <div>
-      <p>Header</p>
+    <div className="container mx-auto h-screen flex flex-col">
+      <Header />
 
-      <Routes>
-        <Route path="/create-blog" element={<CreateBlog />} />
-        <Route path="/detail-blog" element={<DetailBlog />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="px-4 lg:px-9 h-full">
+        <Routes>
+          <Route path="/create-blog" element={<CreateBlog />} />
+          <Route path="/detail-blog" element={<DetailBlog />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
 
-      <p>Content</p>
-      <p>Footer</p>
+      <Footer />
     </div>
   );
 };

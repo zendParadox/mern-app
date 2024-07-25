@@ -6,7 +6,7 @@ const Link = ({ situation, title, onClick }) => {
       <p className="text-center text-sm  text-gray-500">
         {situation}{" "}
         <a
-          href="/login"
+          href={onClick}
           className="font-semibold underline leading-6 text-indigo-600 hover:text-indigo-500">
           {title}
         </a>

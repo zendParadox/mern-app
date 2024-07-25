@@ -28,6 +28,7 @@ const Login = () => {
               <Link
                 situation={"Don't Have Account?"}
                 title={"Register Here!"}
+                onClick={"/register"}
               />
             </form>
           </div>
