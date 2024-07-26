@@ -80,7 +80,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/rafli.ramadhanii/"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-700 transition hover:opacity-75">
