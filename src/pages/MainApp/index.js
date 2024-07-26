@@ -5,7 +5,7 @@ import { Header, Footer } from "../../components/molecules";
 
 const MainApp = () => {
   return (
-    <div className="container mx-auto flex flex-col">
+    <div className="mx-auto flex flex-col">
       <Header />
 
       <div className="px-4 lg:px-9 h-full">

@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="">
-      <div className="w-full h-14 px-4 lg:px-9 bg-blue-100 flex items-center justify-between">
+    <div className="bg-blue-100">
+      <div className="container mx-auto w-full h-14 flex items-center justify-between">
         <a href="/" className="font-semibold text-xl">
           MERN App
         </a>
