@@ -1,7 +1,13 @@
 import React from "react";
 import { LoginBg } from "../../../assets";
+import { Button } from "../../atoms";
+import { useNavigate } from "react-router-dom";
 
 const BlogItem = () => {
+  const navigate = useNavigate();
+  const navigateToDetailBlog = () => {
+    navigate("/detail-blog");
+  };
   return (
     <div>
       <div className=" p-3 rounded-xl shadow-lg">
@@ -19,12 +25,13 @@ const BlogItem = () => {
             <p className="">Author {"/"}</p>
             <p> Date Post</p>
           </div>
-          <p className="mt-3">
+          <p className="my-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
             et veritatis sed iusto dignissimos perferendis eligendi officia
             corrupti quisquam sapiente?
           </p>
         </div>
+        <Button title={"View Details"} onClick={navigateToDetailBlog} />
       </div>
     </div>
   );

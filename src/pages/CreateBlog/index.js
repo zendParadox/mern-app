@@ -1,10 +1,11 @@
 import React from "react";
-import { Input, Button, Upload, TextArea } from "../../components/atoms";
+import { Input, Button, Upload, TextArea, Link } from "../../components/atoms";
 import { LoginBg } from "../../assets";
 
 const DetailBlog = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto my-4">
+      <Link title={"Kembali"} onClick={"/"} />
       <div className="mt-10 mb-4 text-center text-xl font-semibold">
         <p>Create New Blog Post</p>
       </div>
@@ -17,7 +18,7 @@ const DetailBlog = () => {
       />
       <Upload />
       <TextArea />
-      <div className="my-4 flex justify-end">
+      <div className="flex mt-4 justify-end">
         <div className="w-52  ">
           <Button title={"Submit"} />
         </div>

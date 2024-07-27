@@ -1,5 +1,6 @@
 import React from "react";
 import { LoginBg } from "../../assets";
+import { Link } from "../../components";
 
 const DetailBlog = () => {
   return (
@@ -26,6 +27,9 @@ const DetailBlog = () => {
               aperiam, expedita eum harum numquam possimus excepturi? Maiores,
               quia.
             </p>
+          </div>
+          <div className="mt-4">
+            <Link title={"Back to Home"} onClick={"/"} />
           </div>
         </div>
       </div>

@@ -1,7 +1,12 @@
 import React from "react";
 import { Input, Gap, Link, Button } from "../../components";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const navigateToHome = () => {
+    navigate("/");
+  };
   return (
     <>
       <div className="h-screen flex items-center">
@@ -28,7 +33,7 @@ const Login = () => {
               <Link
                 situation={"Don't Have Account?"}
                 title={"Register Here!"}
-                onClick={"/register"}
+                onClick={{ navigateToHome }}
               />
             </form>
           </div>

@@ -9,7 +9,7 @@ const Header = () => {
         </a>
         <a
           href="/login"
-          className="px-5 py-1 bg-green-300 rounded-xl font-semibold hover:bg-green-400 hover:ring-2 hover:ring-slate-300 active:bg-green-500">
+          className="px-5 py-1 underline bg-green-300 rounded-xl font-semibold hover:bg-green-400 hover:ring-2 hover:ring-slate-300 active:bg-green-500">
           Logout
         </a>
       </div>

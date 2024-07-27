@@ -2,13 +2,19 @@ import React from "react";
 
 import { Button } from "../../components/atoms";
 import BlogItem from "../../components/molecules/BlogItem";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateToCreateBlog = () => {
+    navigate("/create-blog");
+  };
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="w-full   flex justify-end mt-8">
+      <div className="w-full flex justify-end mt-8">
         <div className="">
-          <Button title={"Create Blog"} />
+          <Button title={"Create Blog"} onClick={navigateToCreateBlog} />
         </div>
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mt-8 ">
