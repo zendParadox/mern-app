@@ -8,6 +8,10 @@ const BlogItem = (props) => {
   const navigateToDetailBlog = () => {
     navigate("/detail-blog");
   };
+  const formatDate = (dateString) => {
+    const options = { day: "numeric", month: "long", year: "numeric" };
+    return new Date(dateString).toLocaleDateString("en-GB", options);
+  };
   return (
     <div>
       <div className=" p-3 rounded-xl shadow-lg">
@@ -23,9 +27,11 @@ const BlogItem = (props) => {
           <h3 className="font-semibold text-xl">{title}</h3>
           <div className="flex text-sm text-slate-500">
             <p className="">
-              {name} {"/"}
+              {name} {"-"}
             </p>
-            <p> {date}</p>
+            <p>
+              {"- "} {formatDate(date)}
+            </p>
           </div>
           <p className="my-3">{body}</p>
         </div>
