@@ -1,10 +1,13 @@
 import React from "react";
-import { AppRoutes } from "../config";
+import { AppRoutes, store } from "../config";
+import { Provider } from "react-redux";
 
 function App() {
   return (
     <div className="">
-      <AppRoutes />
+      <Provider store={store}>
+        <AppRoutes />
+      </Provider>
     </div>
   );
 }

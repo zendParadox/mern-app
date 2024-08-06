@@ -4,9 +4,14 @@ import { Button } from "../../components/atoms";
 import BlogItem from "../../components/molecules/BlogItem";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 const Home = () => {
   const [dataBlog, setDataBlog] = useState([]);
+
+  const stateGlobal = useSelector((state) => state);
+  console.log(stateGlobal);
+
   useEffect(() => {
     axios
       .get("http://localhost:4000/v1/blog/posts?page=1&perPage=10")
